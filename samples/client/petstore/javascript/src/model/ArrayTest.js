@@ -86,15 +86,15 @@
   }
 
   /**
-   * @member {Array.<String>} array_of_string
+   * @member {{Array.<String>}} array_of_string
    */
   exports.prototype['array_of_string'] = undefined;
   /**
-   * @member {Array.<Array.<Integer>>} array_array_of_integer
+   * @member {{Array.<Array.<Integer>>}} array_array_of_integer
    */
   exports.prototype['array_array_of_integer'] = undefined;
   /**
-   * @member {Array.<Array.<module:model/ReadOnlyFirst>>} array_array_of_model
+   * @member {{Array.<Array.<module:model/ReadOnlyFirst>>}} array_array_of_model
    */
   exports.prototype['array_array_of_model'] = undefined;
 

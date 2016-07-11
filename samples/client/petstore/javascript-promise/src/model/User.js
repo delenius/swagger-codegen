@@ -106,36 +106,36 @@
   }
 
   /**
-   * @member {Integer} id
+   * @member {{Integer}} id
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {String} username
+   * @member {{String}} username
    */
   exports.prototype['username'] = undefined;
   /**
-   * @member {String} firstName
+   * @member {{String}} firstName
    */
   exports.prototype['firstName'] = undefined;
   /**
-   * @member {String} lastName
+   * @member {{String}} lastName
    */
   exports.prototype['lastName'] = undefined;
   /**
-   * @member {String} email
+   * @member {{String}} email
    */
   exports.prototype['email'] = undefined;
   /**
-   * @member {String} password
+   * @member {{String}} password
    */
   exports.prototype['password'] = undefined;
   /**
-   * @member {String} phone
+   * @member {{String}} phone
    */
   exports.prototype['phone'] = undefined;
   /**
    * User Status
-   * @member {Integer} userStatus
+   * @member {{Integer}} userStatus
    */
   exports.prototype['userStatus'] = undefined;
 

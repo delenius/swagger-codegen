@@ -82,11 +82,11 @@
   }
 
   /**
-   * @member {Integer} id
+   * @member {{Integer}} id
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {String} name
+   * @member {{String}} name
    */
   exports.prototype['name'] = undefined;
 

@@ -60,7 +60,8 @@
     /**
      * Create user
      * This can only be done by the logged in user.
-     * @param {module:model/User} body Created user object
+     * @param {{module:model/User}} body Created user object
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.createUser = function(body) {
       var postBody = body;
@@ -96,7 +97,8 @@
     /**
      * Creates list of users with given input array
      * 
-     * @param {Array.<module:model/User>} body List of user object
+     * @param {{Array.<module:model/User>}} body List of user object
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.createUsersWithArrayInput = function(body) {
       var postBody = body;
@@ -132,7 +134,8 @@
     /**
      * Creates list of users with given input array
      * 
-     * @param {Array.<module:model/User>} body List of user object
+     * @param {{Array.<module:model/User>}} body List of user object
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.createUsersWithListInput = function(body) {
       var postBody = body;
@@ -168,7 +171,8 @@
     /**
      * Delete user
      * This can only be done by the logged in user.
-     * @param {String} username The name that needs to be deleted
+     * @param {{String}} username The name that needs to be deleted
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.deleteUser = function(username) {
       var postBody = null;
@@ -205,8 +209,8 @@
     /**
      * Get user by user name
      * 
-     * @param {String} username The name that needs to be fetched. Use user1 for testing. 
-     * data is of type: {module:model/User}
+     * @param {{String}} username The name that needs to be fetched. Use user1 for testing. 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link {module:model/User}}
      */
     this.getUserByName = function(username) {
       var postBody = null;
@@ -243,9 +247,9 @@
     /**
      * Logs user into the system
      * 
-     * @param {String} username The user name for login
-     * @param {String} password The password for login in clear text
-     * data is of type: {'String'}
+     * @param {{String}} username The user name for login
+     * @param {{String}} password The password for login in clear text
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link {'String'}}
      */
     this.loginUser = function(username, password) {
       var postBody = null;
@@ -288,6 +292,7 @@
     /**
      * Logs out current logged in user session
      * 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.logoutUser = function() {
       var postBody = null;
@@ -318,8 +323,9 @@
     /**
      * Updated user
      * This can only be done by the logged in user.
-     * @param {String} username name that need to be deleted
-     * @param {module:model/User} body Updated user object
+     * @param {{String}} username name that need to be deleted
+     * @param {{module:model/User}} body Updated user object
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.updateUser = function(username, body) {
       var postBody = body;

@@ -60,7 +60,8 @@
     /**
      * Delete purchase order by ID
      * For valid response try integer IDs with value &lt; 1000. Anything above 1000 or nonintegers will generate API errors
-     * @param {String} orderId ID of the order that needs to be deleted
+     * @param {{String}} orderId ID of the order that needs to be deleted
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.deleteOrder = function(orderId) {
       var postBody = null;
@@ -97,7 +98,7 @@
     /**
      * Returns pet inventories by status
      * Returns a map of status codes to quantities
-     * data is of type: {Object.<String, {'String': 'Integer'}>}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link {Object.<String, {'String': 'Integer'}>}}
      */
     this.getInventory = function() {
       var postBody = null;
@@ -128,8 +129,8 @@
     /**
      * Find purchase order by ID
      * For valid response try integer IDs with value &lt;&#x3D; 5 or &gt; 10. Other values will generated exceptions
-     * @param {Integer} orderId ID of pet that needs to be fetched
-     * data is of type: {module:model/Order}
+     * @param {{Integer}} orderId ID of pet that needs to be fetched
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link {module:model/Order}}
      */
     this.getOrderById = function(orderId) {
       var postBody = null;
@@ -166,8 +167,8 @@
     /**
      * Place an order for a pet
      * 
-     * @param {module:model/Order} body order placed for purchasing the pet
-     * data is of type: {module:model/Order}
+     * @param {{module:model/Order}} body order placed for purchasing the pet
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link {module:model/Order}}
      */
     this.placeOrder = function(body) {
       var postBody = body;

@@ -59,8 +59,8 @@
 
     /**
      * To test \&quot;client\&quot; model
-     * @param {module:model/Client} body client model
-     * data is of type: {module:model/Client}
+     * @param {{module:model/Client}} body client model
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link {module:model/Client}}
      */
     this.testClientModel = function(body) {
       var postBody = body;
@@ -96,19 +96,20 @@
     /**
      * Fake endpoint for testing various parameters 假端點 偽のエンドポイント 가짜 엔드 포인트 
      * Fake endpoint for testing various parameters 假端點 偽のエンドポイント 가짜 엔드 포인트 
-     * @param {Number} _number None
-     * @param {Number} _double None
-     * @param {String} _string None
-     * @param {String} _byte None
+     * @param {{Number}} _number None
+     * @param {{Number}} _double None
+     * @param {{String}} _string None
+     * @param {{String}} _byte None
      * @param {Object} opts Optional parameters
-     * @param {Integer} opts.integer None
-     * @param {Integer} opts.int32 None
-     * @param {Integer} opts.int64 None
-     * @param {Number} opts._float None
-     * @param {String} opts.binary None
-     * @param {Date} opts._date None
-     * @param {Date} opts.dateTime None
-     * @param {String} opts.password None
+     * @param {{Integer}} opts.integer None
+     * @param {{Integer}} opts.int32 None
+     * @param {{Integer}} opts.int64 None
+     * @param {{Number}} opts._float None
+     * @param {{String}} opts.binary None
+     * @param {{Date}} opts._date None
+     * @param {{Date}} opts.dateTime None
+     * @param {{String}} opts.password None
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.testEndpointParameters = function(_number, _double, _string, _byte, opts) {
       opts = opts || {};
@@ -172,9 +173,10 @@
     /**
      * To test enum query parameters
      * @param {Object} opts Optional parameters
-     * @param {module:model/String} opts.enumQueryString Query parameter enum test (string) (default to -efg)
-     * @param {Number} opts.enumQueryInteger Query parameter enum test (double)
-     * @param {Number} opts.enumQueryDouble Query parameter enum test (double)
+     * @param {{module:model/String}} opts.enumQueryString Query parameter enum test (string) (default to -efg)
+     * @param {{Number}} opts.enumQueryInteger Query parameter enum test (double)
+     * @param {{Number}} opts.enumQueryDouble Query parameter enum test (double)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.testEnumQueryParameters = function(opts) {
       opts = opts || {};

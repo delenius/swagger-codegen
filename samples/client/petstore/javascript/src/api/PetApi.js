@@ -67,7 +67,7 @@
     /**
      * Add a new pet to the store
      * 
-     * @param {module:model/Pet} body Pet object that needs to be added to the store
+     * @param {{module:model/Pet}} body Pet object that needs to be added to the store
      * @param {module:api/PetApi~addPetCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.addPet = function(body, callback) {
@@ -111,9 +111,9 @@
     /**
      * Deletes a pet
      * 
-     * @param {Integer} petId Pet id to delete
+     * @param {{Integer}} petId Pet id to delete
      * @param {Object} opts Optional parameters
-     * @param {String} opts.apiKey 
+     * @param {{String}} opts.apiKey 
      * @param {module:api/PetApi~deletePetCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.deletePet = function(petId, opts, callback) {
@@ -153,16 +153,16 @@
      * Callback function to receive the result of the findPetsByStatus operation.
      * @callback module:api/PetApi~findPetsByStatusCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/Pet>} data The data returned by the service call.
+     * @param {{Array.<module:model/Pet>}} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Finds Pets by status
      * Multiple status values can be provided with comma separated strings
-     * @param {Array.<module:model/String>} status Status values that need to be considered for filter
+     * @param {{Array.<module:model/String>}} status Status values that need to be considered for filter
      * @param {module:api/PetApi~findPetsByStatusCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/Pet>}
+     * data is of type: {@link {Array.<module:model/Pet>}}
      */
     this.findPetsByStatus = function(status, callback) {
       var postBody = null;
@@ -199,16 +199,16 @@
      * Callback function to receive the result of the findPetsByTags operation.
      * @callback module:api/PetApi~findPetsByTagsCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/Pet>} data The data returned by the service call.
+     * @param {{Array.<module:model/Pet>}} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Finds Pets by tags
      * Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.
-     * @param {Array.<String>} tags Tags to filter by
+     * @param {{Array.<String>}} tags Tags to filter by
      * @param {module:api/PetApi~findPetsByTagsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/Pet>}
+     * data is of type: {@link {Array.<module:model/Pet>}}
      */
     this.findPetsByTags = function(tags, callback) {
       var postBody = null;
@@ -245,16 +245,16 @@
      * Callback function to receive the result of the getPetById operation.
      * @callback module:api/PetApi~getPetByIdCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Pet} data The data returned by the service call.
+     * @param {{module:model/Pet}} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Find pet by ID
      * Returns a single pet
-     * @param {Integer} petId ID of pet to return
+     * @param {{Integer}} petId ID of pet to return
      * @param {module:api/PetApi~getPetByIdCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/Pet}
+     * data is of type: {@link {module:model/Pet}}
      */
     this.getPetById = function(petId, callback) {
       var postBody = null;
@@ -298,7 +298,7 @@
     /**
      * Update an existing pet
      * 
-     * @param {module:model/Pet} body Pet object that needs to be added to the store
+     * @param {{module:model/Pet}} body Pet object that needs to be added to the store
      * @param {module:api/PetApi~updatePetCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.updatePet = function(body, callback) {
@@ -342,10 +342,10 @@
     /**
      * Updates a pet in the store with form data
      * 
-     * @param {Integer} petId ID of pet that needs to be updated
+     * @param {{Integer}} petId ID of pet that needs to be updated
      * @param {Object} opts Optional parameters
-     * @param {String} opts.name Updated name of the pet
-     * @param {String} opts.status Updated status of the pet
+     * @param {{String}} opts.name Updated name of the pet
+     * @param {{String}} opts.status Updated status of the pet
      * @param {module:api/PetApi~updatePetWithFormCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.updatePetWithForm = function(petId, opts, callback) {
@@ -386,19 +386,19 @@
      * Callback function to receive the result of the uploadFile operation.
      * @callback module:api/PetApi~uploadFileCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ApiResponse} data The data returned by the service call.
+     * @param {{module:model/ApiResponse}} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * uploads an image
      * 
-     * @param {Integer} petId ID of pet to update
+     * @param {{Integer}} petId ID of pet to update
      * @param {Object} opts Optional parameters
-     * @param {String} opts.additionalMetadata Additional data to pass to server
-     * @param {File} opts.file file to upload
+     * @param {{String}} opts.additionalMetadata Additional data to pass to server
+     * @param {{File}} opts.file file to upload
      * @param {module:api/PetApi~uploadFileCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/ApiResponse}
+     * data is of type: {@link {module:model/ApiResponse}}
      */
     this.uploadFile = function(petId, opts, callback) {
       opts = opts || {};

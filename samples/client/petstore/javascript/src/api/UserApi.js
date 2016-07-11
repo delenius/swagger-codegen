@@ -67,7 +67,7 @@
     /**
      * Create user
      * This can only be done by the logged in user.
-     * @param {module:model/User} body Created user object
+     * @param {{module:model/User}} body Created user object
      * @param {module:api/UserApi~createUserCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.createUser = function(body, callback) {
@@ -111,7 +111,7 @@
     /**
      * Creates list of users with given input array
      * 
-     * @param {Array.<module:model/User>} body List of user object
+     * @param {{Array.<module:model/User>}} body List of user object
      * @param {module:api/UserApi~createUsersWithArrayInputCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.createUsersWithArrayInput = function(body, callback) {
@@ -155,7 +155,7 @@
     /**
      * Creates list of users with given input array
      * 
-     * @param {Array.<module:model/User>} body List of user object
+     * @param {{Array.<module:model/User>}} body List of user object
      * @param {module:api/UserApi~createUsersWithListInputCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.createUsersWithListInput = function(body, callback) {
@@ -199,7 +199,7 @@
     /**
      * Delete user
      * This can only be done by the logged in user.
-     * @param {String} username The name that needs to be deleted
+     * @param {{String}} username The name that needs to be deleted
      * @param {module:api/UserApi~deleteUserCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.deleteUser = function(username, callback) {
@@ -237,16 +237,16 @@
      * Callback function to receive the result of the getUserByName operation.
      * @callback module:api/UserApi~getUserByNameCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/User} data The data returned by the service call.
+     * @param {{module:model/User}} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get user by user name
      * 
-     * @param {String} username The name that needs to be fetched. Use user1 for testing. 
+     * @param {{String}} username The name that needs to be fetched. Use user1 for testing. 
      * @param {module:api/UserApi~getUserByNameCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/User}
+     * data is of type: {@link {module:model/User}}
      */
     this.getUserByName = function(username, callback) {
       var postBody = null;
@@ -283,17 +283,17 @@
      * Callback function to receive the result of the loginUser operation.
      * @callback module:api/UserApi~loginUserCallback
      * @param {String} error Error message, if any.
-     * @param {'String'} data The data returned by the service call.
+     * @param {{'String'}} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Logs user into the system
      * 
-     * @param {String} username The user name for login
-     * @param {String} password The password for login in clear text
+     * @param {{String}} username The user name for login
+     * @param {{String}} password The password for login in clear text
      * @param {module:api/UserApi~loginUserCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {'String'}
+     * data is of type: {@link {'String'}}
      */
     this.loginUser = function(username, password, callback) {
       var postBody = null;
@@ -381,8 +381,8 @@
     /**
      * Updated user
      * This can only be done by the logged in user.
-     * @param {String} username name that need to be deleted
-     * @param {module:model/User} body Updated user object
+     * @param {{String}} username name that need to be deleted
+     * @param {{module:model/User}} body Updated user object
      * @param {module:api/UserApi~updateUserCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.updateUser = function(username, body, callback) {

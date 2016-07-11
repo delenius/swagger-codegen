@@ -98,28 +98,28 @@
   }
 
   /**
-   * @member {Integer} id
+   * @member {{Integer}} id
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {Integer} petId
+   * @member {{Integer}} petId
    */
   exports.prototype['petId'] = undefined;
   /**
-   * @member {Integer} quantity
+   * @member {{Integer}} quantity
    */
   exports.prototype['quantity'] = undefined;
   /**
-   * @member {Date} shipDate
+   * @member {{Date}} shipDate
    */
   exports.prototype['shipDate'] = undefined;
   /**
    * Order Status
-   * @member {module:model/Order.StatusEnum} status
+   * @member {{module:model/Order.StatusEnum}} status
    */
   exports.prototype['status'] = undefined;
   /**
-   * @member {Boolean} complete
+   * @member {{Boolean}} complete
    * @default false
    */
   exports.prototype['complete'] = false;
