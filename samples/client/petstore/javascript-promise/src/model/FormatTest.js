@@ -52,10 +52,10 @@
    * Constructs a new <code>FormatTest</code>.
    * @alias module:model/FormatTest
    * @class
-   * @param _number {{Number}} 
-   * @param _byte {{String}} 
-   * @param _date {{Date}} 
-   * @param password {{String}} 
+   * @param _number {Number} 
+   * @param _byte {String} 
+   * @param _date {Date} 
+   * @param password {String} 
    */
   var exports = function(_number, _byte, _date, password) {
     var _this = this;
@@ -130,55 +130,55 @@
   }
 
   /**
-   * @member {{Integer}} integer
+   * @member {Integer} integer
    */
   exports.prototype['integer'] = undefined;
   /**
-   * @member {{Integer}} int32
+   * @member {Integer} int32
    */
   exports.prototype['int32'] = undefined;
   /**
-   * @member {{Integer}} int64
+   * @member {Integer} int64
    */
   exports.prototype['int64'] = undefined;
   /**
-   * @member {{Number}} number
+   * @member {Number} number
    */
   exports.prototype['number'] = undefined;
   /**
-   * @member {{Number}} float
+   * @member {Number} float
    */
   exports.prototype['float'] = undefined;
   /**
-   * @member {{Number}} double
+   * @member {Number} double
    */
   exports.prototype['double'] = undefined;
   /**
-   * @member {{String}} string
+   * @member {String} string
    */
   exports.prototype['string'] = undefined;
   /**
-   * @member {{String}} byte
+   * @member {String} byte
    */
   exports.prototype['byte'] = undefined;
   /**
-   * @member {{String}} binary
+   * @member {String} binary
    */
   exports.prototype['binary'] = undefined;
   /**
-   * @member {{Date}} date
+   * @member {Date} date
    */
   exports.prototype['date'] = undefined;
   /**
-   * @member {{Date}} dateTime
+   * @member {Date} dateTime
    */
   exports.prototype['dateTime'] = undefined;
   /**
-   * @member {{String}} uuid
+   * @member {String} uuid
    */
   exports.prototype['uuid'] = undefined;
   /**
-   * @member {{String}} password
+   * @member {String} password
    */
   exports.prototype['password'] = undefined;
 

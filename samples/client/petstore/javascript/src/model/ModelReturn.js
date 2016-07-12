@@ -79,7 +79,7 @@
   }
 
   /**
-   * @member {{Integer}} return
+   * @member {Integer} return
    */
   exports.prototype['return'] = undefined;
 

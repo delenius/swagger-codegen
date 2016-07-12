@@ -60,15 +60,15 @@
      * Callback function to receive the result of the testClientModel operation.
      * @callback module:api/FakeApi~testClientModelCallback
      * @param {String} error Error message, if any.
-     * @param {{module:model/Client}} data The data returned by the service call.
+     * @param {module:model/Client} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * To test \&quot;client\&quot; model
-     * @param {{module:model/Client}} body client model
+     * @param {module:model/Client} body client model
      * @param {module:api/FakeApi~testClientModelCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link {module:model/Client}}
+     * data is of type: {@link module:model/Client}
      */
     this.testClientModel = function(body, callback) {
       var postBody = body;
@@ -111,19 +111,19 @@
     /**
      * Fake endpoint for testing various parameters 假端點 偽のエンドポイント 가짜 엔드 포인트 
      * Fake endpoint for testing various parameters 假端點 偽のエンドポイント 가짜 엔드 포인트 
-     * @param {{Number}} _number None
-     * @param {{Number}} _double None
-     * @param {{String}} _string None
-     * @param {{String}} _byte None
+     * @param {Number} _number None
+     * @param {Number} _double None
+     * @param {String} _string None
+     * @param {String} _byte None
      * @param {Object} opts Optional parameters
-     * @param {{Integer}} opts.integer None
-     * @param {{Integer}} opts.int32 None
-     * @param {{Integer}} opts.int64 None
-     * @param {{Number}} opts._float None
-     * @param {{String}} opts.binary None
-     * @param {{Date}} opts._date None
-     * @param {{Date}} opts.dateTime None
-     * @param {{String}} opts.password None
+     * @param {Integer} opts.integer None
+     * @param {Integer} opts.int32 None
+     * @param {Integer} opts.int64 None
+     * @param {Number} opts._float None
+     * @param {String} opts.binary None
+     * @param {Date} opts._date None
+     * @param {Date} opts.dateTime None
+     * @param {String} opts.password None
      * @param {module:api/FakeApi~testEndpointParametersCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.testEndpointParameters = function(_number, _double, _string, _byte, opts, callback) {
@@ -195,9 +195,9 @@
     /**
      * To test enum query parameters
      * @param {Object} opts Optional parameters
-     * @param {{module:model/String}} opts.enumQueryString Query parameter enum test (string) (default to -efg)
-     * @param {{Number}} opts.enumQueryInteger Query parameter enum test (double)
-     * @param {{Number}} opts.enumQueryDouble Query parameter enum test (double)
+     * @param {module:model/String} opts.enumQueryString Query parameter enum test (string) (default to -efg)
+     * @param {Number} opts.enumQueryInteger Query parameter enum test (double)
+     * @param {Number} opts.enumQueryDouble Query parameter enum test (double)
      * @param {module:api/FakeApi~testEnumQueryParametersCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.testEnumQueryParameters = function(opts, callback) {

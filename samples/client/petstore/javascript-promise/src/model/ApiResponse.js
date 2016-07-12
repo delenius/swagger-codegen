@@ -86,15 +86,15 @@
   }
 
   /**
-   * @member {{Integer}} code
+   * @member {Integer} code
    */
   exports.prototype['code'] = undefined;
   /**
-   * @member {{String}} type
+   * @member {String} type
    */
   exports.prototype['type'] = undefined;
   /**
-   * @member {{String}} message
+   * @member {String} message
    */
   exports.prototype['message'] = undefined;
 

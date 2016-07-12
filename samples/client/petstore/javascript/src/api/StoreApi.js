@@ -67,7 +67,7 @@
     /**
      * Delete purchase order by ID
      * For valid response try integer IDs with value &lt; 1000. Anything above 1000 or nonintegers will generate API errors
-     * @param {{String}} orderId ID of the order that needs to be deleted
+     * @param {String} orderId ID of the order that needs to be deleted
      * @param {module:api/StoreApi~deleteOrderCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.deleteOrder = function(orderId, callback) {
@@ -105,7 +105,7 @@
      * Callback function to receive the result of the getInventory operation.
      * @callback module:api/StoreApi~getInventoryCallback
      * @param {String} error Error message, if any.
-     * @param {{Object.<String, {'String': 'Integer'}>}} data The data returned by the service call.
+     * @param {Object.<String, {'String': 'Integer'}>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -113,7 +113,7 @@
      * Returns pet inventories by status
      * Returns a map of status codes to quantities
      * @param {module:api/StoreApi~getInventoryCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link {Object.<String, {'String': 'Integer'}>}}
+     * data is of type: {@link Object.<String, {'String': 'Integer'}>}
      */
     this.getInventory = function(callback) {
       var postBody = null;
@@ -144,16 +144,16 @@
      * Callback function to receive the result of the getOrderById operation.
      * @callback module:api/StoreApi~getOrderByIdCallback
      * @param {String} error Error message, if any.
-     * @param {{module:model/Order}} data The data returned by the service call.
+     * @param {module:model/Order} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Find purchase order by ID
      * For valid response try integer IDs with value &lt;&#x3D; 5 or &gt; 10. Other values will generated exceptions
-     * @param {{Integer}} orderId ID of pet that needs to be fetched
+     * @param {Integer} orderId ID of pet that needs to be fetched
      * @param {module:api/StoreApi~getOrderByIdCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link {module:model/Order}}
+     * data is of type: {@link module:model/Order}
      */
     this.getOrderById = function(orderId, callback) {
       var postBody = null;
@@ -190,16 +190,16 @@
      * Callback function to receive the result of the placeOrder operation.
      * @callback module:api/StoreApi~placeOrderCallback
      * @param {String} error Error message, if any.
-     * @param {{module:model/Order}} data The data returned by the service call.
+     * @param {module:model/Order} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Place an order for a pet
      * 
-     * @param {{module:model/Order}} body order placed for purchasing the pet
+     * @param {module:model/Order} body order placed for purchasing the pet
      * @param {module:api/StoreApi~placeOrderCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link {module:model/Order}}
+     * data is of type: {@link module:model/Order}
      */
     this.placeOrder = function(body, callback) {
       var postBody = body;

@@ -78,7 +78,7 @@
   }
 
   /**
-   * @member {{String}} client
+   * @member {String} client
    */
   exports.prototype['client'] = undefined;
 

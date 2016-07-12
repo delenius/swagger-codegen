@@ -86,15 +86,15 @@
   }
 
   /**
-   * @member {{String}} uuid
+   * @member {String} uuid
    */
   exports.prototype['uuid'] = undefined;
   /**
-   * @member {{Date}} dateTime
+   * @member {Date} dateTime
    */
   exports.prototype['dateTime'] = undefined;
   /**
-   * @member {{Object.<String, module:model/Animal>}} map
+   * @member {Object.<String, module:model/Animal>} map
    */
   exports.prototype['map'] = undefined;
 

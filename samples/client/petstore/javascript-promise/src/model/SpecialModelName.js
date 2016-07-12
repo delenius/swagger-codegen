@@ -78,7 +78,7 @@
   }
 
   /**
-   * @member {{Integer}} $special[property.name]
+   * @member {Integer} $special[property.name]
    */
   exports.prototype['$special[property.name]'] = undefined;
 

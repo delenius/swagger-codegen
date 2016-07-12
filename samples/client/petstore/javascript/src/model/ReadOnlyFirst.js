@@ -82,11 +82,11 @@
   }
 
   /**
-   * @member {{String}} bar
+   * @member {String} bar
    */
   exports.prototype['bar'] = undefined;
   /**
-   * @member {{String}} baz
+   * @member {String} baz
    */
   exports.prototype['baz'] = undefined;
 
